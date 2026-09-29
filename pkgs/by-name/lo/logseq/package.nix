@@ -118,7 +118,7 @@ stdenv.mkDerivation (finalAttrs: {
     name = "logseq-${finalAttrs.version}-yarn-deps-static-resources";
     inherit (finalAttrs) src patches;
     postPatch = "cd ./static";
-    hash = lib.fakeHash;
+    hash = "sha256-Ac1MN+EcCBPbpiGgfwnBcjDdT+9bZJzm66kisu/wo64=";
   };
 
   yarnOfflineCacheAmplify = fetchYarnDeps {
